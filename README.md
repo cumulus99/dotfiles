@@ -1,7 +1,8 @@
 Dotfiles
 
 - bspwm
-- qutebrowser (might change later)
-- no shell scripts yet
-- keybinds
-- uhh other stuff I guess
+- qutebrowser
+- download qutebrowser plugins
+- sxhkd keybinds
+
+Maybe switch to surf or somthn idk
