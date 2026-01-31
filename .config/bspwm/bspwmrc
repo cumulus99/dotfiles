@@ -5,7 +5,7 @@ nitrogen --set-scaled /usr/share/backgrounds/archlinux/small.png
 # Launch OpenTabledDriver
 # otd-daemon &
 # Bar, notifications, keyboard shortcuts
-pgrep -x lemonbar > /dev/null || lemonbar -p &
+pgrep -x lemonbar > /dev/null || lemonbar.sh | lemonbar -p &
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x dunst > /dev/null || dunst &
 # If you need compositer
