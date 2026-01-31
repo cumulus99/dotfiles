@@ -1,0 +1,28 @@
+ctrl + shift + Escape
+    htop &
+
+#float or tile windows
+super + t
+    bspc node -t floating
+super + shift + t
+    bspc node -t tiled
+
+#sxhkd & dunst config reload
+alt + Escape
+    pkill -USR -x sxhkd
+
+#applications
+alt + d
+    dmenu_run
+
+#closing windows
+super + w
+    bspc node -c
+
+#quit/reset bspwm
+super + {q,r}
+    bspc {quit,wm -r}
+
+#screenshot
+Print
+    flameshot gui
