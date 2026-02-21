@@ -1,17 +1,8 @@
 #! /bin/sh
 # startup daemons and programs
 bsp-layout set even &
-nitrogen --set-scaled /usr/share/backgrounds/archlinux/small.png
-# Launch OpenTabledDriver
-# otd-daemon &
-# Bar, notifications, keyboard shortcuts
-lemonbar.sh | lemonbar -p &
-pgrep -x sxhkd > /dev/null || sxhkd &
-pgrep -x dunst > /dev/null || dunst &
-# If you need compositer
-pgrep -X xcompmgr > /dev/null || xcompmgr &
 # Workspaces
-bspc monitor -d I II III IIII
+bspc monitor -d I II III
 # Bspwm Settings
 bspc config border_width        2
 bspc config window_gap          12
